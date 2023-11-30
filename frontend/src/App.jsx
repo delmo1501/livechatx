@@ -16,6 +16,7 @@ function App() {
     }
     setMessages([ ...messages, newMessage])
     socket.emit('message', message);
+    setMessage('');
   }
 
   useEffect(() => {
