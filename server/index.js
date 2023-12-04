@@ -8,7 +8,7 @@ const io = new SocketServer(server)
 
 
 io.on('connection', socket => {
-    console.log('new connection')
+    console.log('new connection', socket.id)
 
     socket.on('message', (body) => {
         console.log(body)
